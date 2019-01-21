@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7;
+}
+#full_box{
+    width: 7.5rem; 
+    
+    .sel_area{
+        width: 100%;
+        padding: 0 .29rem 0 .33rem;
+        .sel_name{
+            width: 1rem;
+            height: .6rem;
+            line-height: .6rem;
+            font-size: .25rem;
+            color: #303030;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sel_option{
+            width: 4.89rem;
+            font-size: 0;
+            display: inline-block;
+            margin-left: .98rem;
+            vertical-align: top;
+            span{
+                width: 1.45rem;
+                height: .6rem;
+                line-height: .6rem;
+                border: 1px solid #d3d3d3;
+                border-radius: .05rem;
+                margin-left: .27rem;
+                font-size: .26rem;
+                color: #999;
+                display: inline-block;
+                text-align: center;
+                background-color: #fff;
+            }
+            span:nth-of-type(3n-2){
+                margin-left: 0;
+            }
+            span:nth-of-type(n+4){
+                margin-top: .2rem;
+            }
+            span.onSelect{
+                background-color: #4c86f5;
+                color: #fff;
+            }
+        }
+    }
+        
+        
+    #full_top{
+       width: 100%;
+       height: 3rem;
+       background: url(/view/img/oneloan/full_banner.png) no-repeat 0 0;
+       background-size: 100% 3rem;
+        .title{
+            position: relative;
+            line-height: .3rem;
+            text-align: center;
+            font-size: .3rem;
+            padding: .3rem 0;
+            color: #fff;
+            span{
+                display: inline-block;
+                height: .3rem;
+            }
+            .go_back{
+                position: absolute;
+                width: .19rem;
+                height: .3rem;
+                display: inline-block;
+                left: .32rem;
+                background: url(../../img/oneloan/headBack.png) no-repeat 0 0;
+                background-size: .19rem .3rem;
+            }
+        }
+        .schedule{
+            height: 1.62rem;
+            margin-top: .15rem;
+            padding: 0 .47rem;
+            .left{
+                width: 3.88rem;
+                float: left;
+                padding-top: .34rem;
+                .text1{
+                    font-size: .57rem;
+                    color: #fff;
+                    line-height: .57rem;
+                    font-weight: 700;
+                }
+                .text2{
+                    font-size: .24rem;
+                    color: #fff;
+                    line-height: .24rem;
+                    margin-top: .34rem;
+                }
+            }
+            .right{
+                float: right;
+                width: 1.9rem;
+                height: 1.9rem;
+                position: relative;
+                .knob{
+                    font-size: 0 !important;
+                }
+                .knob_text{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: .52rem;
+                    .percent{
+                        width: 100%;
+                        text-align: center;
+                        height: .38rem;
+                        line-height: .38rem;
+                        color: #fff;
+                        font-size: .38rem;
+                        font-weight: 700;
+                    }
+                    p:last-of-type{
+                        font-size: .2rem;
+                        color: #fff;
+                        line-height: .29rem;
+                        text-align: center;
+                        margin-top: .17rem;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        overflow: hidden;
+        .info_mod{
+            width: 100%;
+            margin-top: .2rem;
+            background-color: #fff;
+            .info_title{
+                width: 100%;
+                height: .89rem;
+                border-bottom: 1px solid #e1e1e1;
+                padding: .28rem .33rem;
+                font-size: 0;
+                img{
+                    width: .33rem;
+                    height: .33rem;
+                    border-radius: .04rem;
+                    border: none;  
+                    vertical-align: middle;
+                }
+                .info_name{
+                    font-size: .26rem;
+                    height: .32rem;
+                    line-height: .32rem;
+                    color: #303030;
+                    display: inline-block;
+                    margin-left: .18rem;
+                    vertical-align: middle;
+                }
+                .success_percent{
+                    width: 3.6rem;
+                    font-size: .23rem;
+                    color: #303030;
+                    height: .32rem;
+                    line-height: .32rem;
+                    display: inline-block;
+                    margin-left: 1.3rem;
+                    vertical-align: middle;
+                    text-align: right;
+                }
+                .stretch_btn{
+                    width: .28rem;
+                    height: .28rem;
+                    float: right;
+                    margin-top: .04rem;
+                    background: url(../../img/oneloan/full_bottom_icon.png) no-repeat center center;
+                    background-size: .28rem .18rem;
+                    vertical-align: middle;
+                }
+            }
+            .inp_area{
+                width: 100%;
+                padding-left: .33rem;
+                >div{
+                    width: 100%;
+                    height: .89rem;
+                    border-bottom: 1px solid #e1e1e1;
+                    .inp_name{
+                        width: 1rem;
+                        height: .89rem;
+                        line-height: .89rem;
+                        font-size: .25rem;
+                        color: #303030;
+                        display: inline-block;
+                    }
+                    .name_inp,.idcard_inp{
+                        width: 70%;
+                        height: 70%;
+                        float: right;
+                        margin: .13rem .3rem 0 0; 
+                        text-align: right;
+                        color: #4c86f5;
+                    }
+                    .city_inp{
+                        max-width: 4.75rem;
+                        height: 70%;
+                        line-height: .62rem;
+                        margin: .13rem .3rem 0 0;
+                        display: inline-block;
+                        color: #4c86f5;
+                        float: right;
+                        font-size: .25rem;
+                        text-align: right;
+                        padding-right: .38rem;
+                        background: url(../../img/oneloan/city_arrow.png) no-repeat right center;
+                        background-size: .22rem .12rem;
+                    }
+                    .name_inp::-webkit-input-placeholder,.idcard_inp::-webkit-input-placeholder{
+                        color:#999999;
+                    }
+                    .name_inp::-moz-placeholder,.idcard_inp::-moz-placeholder{
+                        color:#999999;
+                    }
+                    .name_inp:-moz-placeholder,.idcard_inp:-moz-placeholder{
+                        color:#999999;
+                    }
+                    .name_inp:-ms-input-placeholder,.idcard_inp:-ms-input-placeholder{
+                        color:#999999;
+                    }
+                }
+                >div:last-of-type{
+                    border-bottom: none;
+                }
+            }
+        }
+        #job_info{
+            width: 100%;
+            margin-top: .2rem;
+            background-color: #fff;
+            .job_sel_box{
+                >.sel_area{
+                    padding: .28rem .29rem .26rem .33rem;
+                    .sel_option{
+                        span{
+                            position: relative;
+                        }
+                        span.onSelect:before{
+                            content:'';
+                            position:absolute;
+                            bottom: -0.3rem;
+                            left: 50%;
+                            margin-left: -0.2rem;
+                            width: 0;
+                            height: 0;
+                            border-right: .2rem solid transparent;
+                            border-bottom: .2rem solid #f2f2f2;
+                            border-left: .2rem solid transparent;
+                        }
+                    }
+                }
+                .job_cover_box{
+                    display: none;
+                    .office_workers,.servant,.private_business_owner{
+                        background-color: #f2f2f0;
+                        padding: .28rem 0 .26rem;
+                        .sel_area{
+                           margin-top: .2rem; 
+                        }
+                        .sel_area:first-of-type{
+                            margin-top: 0;
+                        }
+                    }
+                    .office_workers{
+            //          display: none;
+                    }
+                    .servant{
+                        display: none;
+                    }
+                    .private_business_owner{
+                        display: none;   
+                    }
+                }
+            }
+        }
+        #asset_info{
+            .asset_sel_box{
+                padding: .28rem 0 .26rem;
+                .sel_area{
+                   margin-top: .2rem; 
+                }
+                .sel_area:first-of-type{
+                    margin-top: 0;
+                }
+            }
+        }
+        #credit_info{
+            .credit_sel_box{
+                padding: .28rem 0 .26rem;
+                .sel_area{
+                   margin-top: .2rem; 
+                }
+                .sel_area:first-of-type{
+                    margin-top: 0;
+                }
+            }
+        }
+        .full_copyright{
+            width: 100%;
+            height: .21rem;
+            line-height: .21rem;
+            text-align: center;
+            font-size: .21rem;
+            color: #bbbbbb;
+            margin-top: .32rem;
+            padding-bottom: .52rem;
+        }
+    }
+    #full_loans{
+        width: 100%;
+        height: 1.28rem;
+        background-color: #fff;
+        overflow: hidden;
+        .loans_btn{
+            width: 6.9rem;
+            height: .96rem;
+            background-color: #fe5c0d;
+            font-size: .31rem;
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            border-radius: .07rem;
+            display: block;
+            outline: none;
+            margin: .16rem auto 0;
+        }
+    }
+}
+
+#city_cover_box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    .cityLocation {
+        position: relative;
+        width: 100%;
+        height: .8rem;
+        border-bottom: 1px solid #EBEBEB;
+        background: white;
+        div {
+            float: left;
+            font-size: .24rem;
+            text-align: center;
+            &:nth-of-type(1) {
+                line-height: .8rem;
+                width: 2rem;
+            }
+
+            &:nth-of-type(2) {
+                width: 1.8rem;
+                color: #ec2033;
+                height: .55rem;
+                line-height: .55rem;
+                border: 1px solid #ec2033;
+                margin-top: .125rem;
+            }
+
+            &:nth-of-type(3) {
+                line-height: .8rem;
+                float: right;
+                position: relative;
+                margin-right: .4rem;
+                color: #ec2033;
+            }
+
+            &:nth-of-type(3):before {
+                content: "";
+                width: .4rem;
+                height: .8rem;
+                position: absolute;
+                top: 0;
+                left: -0.5rem;
+                background: url('/view/img/oneloan/dingwei.png') no-repeat center center;
+                background-size: .35rem .35rem;
+            }
+        }
+
+    }
+    #wrapper {
+        -webkit-box-flex: 1;
+        overflow-y: scroll;
+        position: relative;
+        .fixedNav {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: .3rem;
+            padding-left: .3rem;
+            height: .4rem;
+            line-height: .4rem;
+            width: 100%;
+            color: white;
+            background: #c8c8c8;
+        }
+        .centerfixedNav {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            color: white;
+            background: #64209e;
+            opacity: .7;
+            text-align: center;
+            line-height: 1rem;
+            font-size: .4rem;
+        }
+        .hotCity {
+            background: white;
+            h3 {
+                padding-top: .15rem;
+                font-size: .24rem;
+                padding-left: .3rem;
+            }
+            .hotCitylist {
+                padding-left: .3rem;
+                font-size: 0;
+                span {
+                    display: inline-block;
+                    width: 1.9rem;
+                    margin: .2rem .45rem 0 0;
+                    border: 1px solid #ececec;
+                    text-align: center;
+                    height: .55rem;
+                    line-height: .55rem;
+                    color: #909090;
+                    font-size: .26rem;
+                    cursor: pointer;
+                    &.selectStyle {
+                        color: #64209e;
+                        border: 1px solid #64209e;
+                    }
+                    &:last-child {
+                        margin-bottom: .25rem;
+                    }
+                }
+            }
+
+        }
+        .slider-content {
+            li h3 {
+                font-size: .3rem;
+                padding-left: .3rem;
+                height: .4rem;
+                line-height: .4rem;
+                width: 100%;
+            }
+            .cityList {
+                width: 100%;
+                background: white;
+                li {
+                    width: 6.4rem;
+                    margin-left: .6rem;
+                    border-bottom: 1px solid #e6e6e6;
+                    height: .66rem;
+                    line-height: .66rem;
+                    font-size: .24rem;
+                    cursor: pointer;
+                    &.selectStyle {
+                        background: url('../img/duigou.png') no-repeat 5.5rem center;
+                        background-size: .3rem .3rem;
+                    }
+                    &:last-child {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    .slider-nav {
+        position: absolute;
+        top: 2.2rem;
+        right: 0;
+        width: .5rem;
+        z-index: 9999;
+        li {
+            text-align: center;
+            width: 100%;
+            height: .25rem;
+            cursor: pointer;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                font-size: .18rem;
+                color: #64209e;
+            }
+        }
+
+    }
+}
+
